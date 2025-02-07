@@ -74,6 +74,7 @@ module.exports = (_, argv) => ({
     new ModuleFederationPlugin({
       name: "auth",
       filename: "remoteEntry.js",
+      remotes: {},
       exposes: {
         "./AuthLogic": "./src/AuthLogic.jsx",
         "./styles": "./src/stylesEntry.js",

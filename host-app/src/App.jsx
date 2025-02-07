@@ -21,7 +21,7 @@ const LazyComponent = ({ scope, module }) => {
     loadRemoteComponent(scope, module)
       .then((ComponentModule) => setComponent(() => ComponentModule.default))
       .catch((error) =>
-        console.error(`🚨 Error loading ${module} from ${scope}`, error)
+        console.error(`Error loading ${module} from ${scope}`, error)
       );
   }, [scope, module]);
 
